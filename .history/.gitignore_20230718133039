@@ -12,4 +12,4 @@ stats.html
 
 .eslintcache
 
-.env
+.env*

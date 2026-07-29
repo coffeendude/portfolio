@@ -15,3 +15,8 @@ stats.html
 .env
 .history
 node_modules
+.env.local
+.env.*.local
+public_html
+public/
+release

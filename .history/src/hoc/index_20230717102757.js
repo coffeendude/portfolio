@@ -1,1 +1,0 @@
-import SectionWrapper from "./SectionWrapper";

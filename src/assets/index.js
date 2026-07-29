@@ -32,12 +32,23 @@ import cofense from "./company/cofense.png";
 import deloitte from "./company/deloitte.png";
 import codeup from "./company/codeup.png";
 import stomp from "./company/stomp.png";
+import bp_icon from "./company/bp_icon.png";
+import data from "./company/data.png";
+import cyber_sec from "./company/cyber_sec.png";
+import crypto from "./company/crypto.png";
+import infra from "./company/infra.png";
+import solution from "./company/solution.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import doom from "./doom.png";
 import play from "./play.png";
+import animated_code_eye from "./animated_code_eye.png";
+import matrix from "./matrix.png";
+import stomp_hs1 from "./paint_can_stomp.png";
+import stomp_hs from "./poles_stomp.png";
+import stomp_hs2 from "./trashcan_stomp.png";
 
 export {
   logo,
@@ -76,5 +87,16 @@ export {
   jobit,
   tripguide,
   doom,
-  play
+  play,
+  animated_code_eye,
+  matrix,
+  stomp_hs,
+  stomp_hs1,
+  stomp_hs2,
+  bp_icon,
+  crypto,
+  infra,
+  data,
+  cyber_sec,
+  solution
 };

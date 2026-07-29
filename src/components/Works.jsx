@@ -38,6 +38,8 @@ const ProjectCard = ({ index, name, description,tags, image, source_code_link, w
               />
               
             </div>
+            {name === "Doom Demo Game Engine" ? (
+
             <div 
               onClick={() => window.open(website_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full hidden lg:flex justify-center items-center cursor-pointer"
@@ -49,15 +51,32 @@ const ProjectCard = ({ index, name, description,tags, image, source_code_link, w
               />
               
             </div>
+            ) : null }
           </div>
 
         </div>
 
-        <div
+        {/* <div
+          className="flex flex-col justify-center items-center">
+          <h3 className="my-2 justify-center items-center font-bold text-[18px]">{name}</h3> */}
+          {/* <p className="text-sm items-center m-1">This Doom game engine, a full Python adaptation using Pygame, has been modified by me but originated from <a href='https://www.youtube.com/channel/UCwe6kcllhainHICL1vnq41g' target="_blank"><span className="font-bold">Coder</span> <span className="font-bold text-[#fd6a01]">Space's</span></a> YouTube. I used pygbag to create a WebAssembly version for browser game operation.</p> */}
+         {name === "Doom Demo Game Engine" ? (  
+          <>
+          <div
           className="flex flex-col justify-center items-center">
           <h3 className="my-2 justify-center items-center font-bold text-[18px]">{name}</h3>
-          <p className="text-sm items-center m-1">This Doom game engine, a full Python adaptation using Pygame, has been modified by me but originated from <a href='https://www.youtube.com/channel/UCwe6kcllhainHICL1vnq41g' target="_blank"><span className="font-bold">Coder</span> <span className="font-bold text-[#fd6a01]">Space's</span></a> YouTube. I used pygbag to create a WebAssembly version for browser game operation.</p>
-        </div>
+          <p className="text-sm items-center m-1">{description}<a href='https://www.youtube.com/channel/UCwe6kcllhainHICL1vnq41g' target="_blank"><span className="font-bold">Coder</span> <span className="font-bold text-[#fd6a01]">Space</span></a>. I used pygbag to create a WebAssembly version for browser game operation.</p>
+          </div>
+          </>
+         ) : (
+          <>  
+           <div
+          className="flex flex-col justify-center items-center">
+          <h3 className="my-2 justify-center items-center font-bold text-[18px]">{name}</h3>
+          <p className="text-sm items-center m-1">{description}</p>
+          </div>
+          </>
+         )}
 
       </Tilt>
     </motion.div>
@@ -67,7 +86,7 @@ const ProjectCard = ({ index, name, description,tags, image, source_code_link, w
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="innovation-engineer">
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionOVText}>Projects</h2>
       </motion.div>
@@ -82,6 +101,7 @@ const Works = () => {
         </motion.p>
       </div>
 
+     
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard 
@@ -92,6 +112,7 @@ const Works = () => {
           />
         ))}
       </div>
+     
     </>
   )
 }

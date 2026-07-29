@@ -13,3 +13,5 @@ stats.html
 .eslintcache
 
 .env
+.history
+node_modules

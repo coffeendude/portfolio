@@ -1,0 +1,14 @@
+{
+  "selected_work": {
+    "path": "src/content/selected_work.json",
+    "notes": "All items set to published: false to remove risk from public UI. Verify before publishing."
+  },
+  "thinking": {
+    "path": "src/content/thinking.json",
+    "notes": "Thought pieces are in draft; gate publication through editorial review."
+  },
+  "current_work": {
+    "path": "src/content/current_work.json",
+    "notes": "Working list of activities. Unpublished by default."
+  }
+}

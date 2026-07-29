@@ -29,7 +29,15 @@ import {
     tripguide,
     threejs,
     doom,
-    a_logo
+    animated_code_eye,
+    a_logo,
+    matrix,
+    bp_icon,
+    crypto,
+    infra,
+    data,
+    cyber_sec,
+    solution
   } from "../assets";
   
   export const navLinks = [
@@ -49,21 +57,25 @@ import {
   
   const services = [
     {
+      title: "Solutions Architect",
+      icon: web,
+      targetId: "solutions-architect"
+  },
+    {
       title: "Platform Engineer",
       icon: creator,
-    },
-    {
+      targetId: "platform-engineer"
+  },
+  {
       title: "Software Engineer",
       icon: backend,
-    },
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
+      targetId: "software-engineer"
+  },
+  {
+      title: "Innovation Engineer",
       icon: mobile,
-    },  
+      targetId: "innovation-engineer"
+  }, 
   ];
   
   const technologies = [
@@ -123,33 +135,55 @@ import {
   
   const experiences = [
     {
-      title: `Platform Engineer |  SRE`,
-      company_name: "Cofense",
-      icon: cofense,
+      title: "SRE | Solutions Architect",
+      // company_name: "Blockparty",
+      icon: crypto,
       iconBg: "#383E56",
-      date: "June 2021 - July 2023",
+      // date: "May 2024 - ",
+      points: [
+        "Collaborate with senior lead to design and implement a scalable, secure, and reliable infrastructure for a blockchain-based data-index API.", "Implement and maintain monitoring and alerting systems for infrastructure and application health.", "Work with development teams to optimize application performance and reliability."
+      ],
+    },
+    
+    {
+      title: "Platform Engineer | SRE",
+      // company_name: "Cofense",
+      icon: infra,
+      iconBg: "#383E56",
+      // date: "June 2021 - July 2023",
       points: [
         "Data-focused Platform Engineer overseeing data store upgrades across multiple environments, including script rehearsal/testing and (secops) compliance, for MySQL and PostgreSQL migration to AWS Aurora.", "Successfully developed and implemented an LSTM model in just a week and a half to test the feasibility of auto-generating corporate-style emails for spam filtering. Contributed to both infrastructure and code development for this proof-of-concept project.", "Assisted in selecting and designing GitLab machine runners to optimize CI/CD pipeline runners, reducing cloud machine costs and enhancing CI/CD performance through improved availability.", "Implemented an Elasticsearch custom service upgrade to resolve security vulnerabilities found in the bundled ES JDK.",
       ],
     },
     {
+      title: "Senior Intel Operations Engineer (Team Lead)",
+      // company_name: "Cofense",
+      id: "solutions-architect",
+      icon: solution,
+      iconBg: "#383E56",
+      // date: "January 2024 - ",
+      points: [
+        "Spearheaded the re-architecture and development of a robust ETL pipeline for a data processing and distribution platform, enabling Data Analysts to conduct in-depth analysis of malware and email threats.", "Collaborated on the design and implementation of a comprehensive data pipeline for data ingestion, extraction, transformation, grooming, storage, and automated delivery.", "Worked closely with engineers and project managers to ensure alignment with project requirements and timelines.", "Ensured the successful execution of the architecture by driving the project from concept through deployment, maintaining alignment with evolving business needs."
+      ],
+    },
+    {
       title: "Software Engineer",
-      company_name: "R9B/Delloite",
-      icon: deloitte,
+      // company_name: "R9B/Delloite",
+      icon: cyber_sec,
       iconBg: "#E6DEDD",
-      date: "December 2020 - June 2021",
+      // date: "December 2020 - June 2021",
       points: [
         "Integral developer for a backend feature on a data integration HUNT platform, connecting Redis queues via REST API endpoints. Enabled indexed requests to databases and provided support for new and upgraded DB inputs.","Collaborated with senior developer to debug c++ garbage collection and optimize performance for multi-platform HUNT modules recording user activity over networks.",
       ],
     },
     {
-      title: "Student",
+      title: "Technology Education",
       company_name: "Codeup",
       icon: codeup,
       iconBg: "#383E56",
-      date: "March 2020 - September 2020",
+      // date: "March 2020 - September 2020",
       points: [
-        "Codeup is a fully-immersive, project-based, and intensive 20 week full stack Java career accelerator that provides students with 670+ hours of expert instruction in software development.",
+        "Codeup is a fully-immersive, project-based, and intensive 20 week Full Stack Java/JavaScript career accelerator that provides students with 670+ hours of expert instruction in software development.",
       ],
     },
     {
@@ -157,7 +191,7 @@ import {
       company_name: "STOMP",
       icon: stomp,
       iconBg: "#E6DEDD",
-      date: "August 2016 - Jan 2020",
+      // date: "August 2016 - Jan 2020",
       points: [
         "As a performer with the New York, North American Tour, and World Tour companies it was my responsibility to quickly learn the performance material with the flexibility for on the fly changes to the show. The ability to react appropriately and improvise on the spot in live performance situations is a constant as casts rotate every show providing for a unique experience of cooperative teamwork.",
       ],
@@ -195,7 +229,7 @@ import {
     {
       name: "Doom Demo Game Engine",
       description:
-        "A complete Doom game engine built in python using pygame. I've made some modifications but the original architecture and design decends from youtube channel Coder Space.  ",
+        "A complete Doom game engine built in python using pygame. I've made some modifications but the original architecture and design decends from the youtube channel  ",
       tags: [
         {
           name: "python",
@@ -214,6 +248,58 @@ import {
       source_code_link: "https://gitlab.com/needcoffeedev/90s-game-nostalgia",
       website_link: "https://ddge.cloud",
       artist_link: "https://www.youtube.com/channel/UCwe6kcllhainHICL1vnq41g",
+    },
+    {
+      name: "IPFS Scraper Go Application",
+      description:
+        "A Go-based service that fetches and stores metadata for Content Identifiers (CIDs) from IPFS into a PostgreSQL database.",
+      tags: [
+        {
+          name: "golang",
+          color: "green-text-gradient",
+        },
+        // {
+        //   name: "mongodb",
+        //   color: "green-text-gradient",
+        // },
+        // {
+        //   name: "tailwind",
+        //   color: "pink-text-gradient",
+        // },
+      ],
+      image: animated_code_eye,
+      source_code_link: "https://github.com/coffeendude/ipfs-cids-go-scraper",
+      website_link: "",
+      artist_link: ""
+    },
+    {
+      name: "Matrix Rain ECS Deployment",
+      description:
+        "A frontend Matrix rain effect application with terraform and ECS configuration for cloud deployment.",
+      tags: [
+        {
+          name: "js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "terraform",
+          color: "green-text-gradient",
+        },
+        {
+          name: "aws",
+          color: "green-text-gradient",
+        },
+        // {
+        //   name: "mongodb",
+        //   color: "green-text-gradient",
+        // },
+        // {
+        //   name: "tailwind",
+        //   color: "pink-text-gradient",
+        // },
+      ],
+      image: matrix,
+      source_code_link: "https://github.com/coffeendude/ecs-matrix",
     },
     // {
     //   name: "Job IT",

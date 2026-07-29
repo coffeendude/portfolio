@@ -1,0 +1,29 @@
+[
+  {
+    "id": "stage-skills",
+    "title": "How do stage skills translate to systems?",
+    "excerpt": "A working thesis on turning performance practice into repeatable operating models for teams.",
+    "slug": null,
+    "published": false,
+    "verified": false,
+    "draftNotes": "Draft thought piece — hold for publication gating"
+  },
+  {
+    "id": "technical-gtm",
+    "title": "What makes GTM technical?",
+    "excerpt": "A practical playbook for technical GTM: product integrations, instrumentation, and partner motion.",
+    "slug": null,
+    "published": false,
+    "verified": false,
+    "draftNotes": "Draft thought piece — hold for publication gating"
+  },
+  {
+    "id": "eng-leadership",
+    "title": "Engineering leadership at founder scale",
+    "excerpt": "Notes on scaling engineering judgment to influence company direction and revenue outcomes.",
+    "slug": null,
+    "published": false,
+    "verified": false,
+    "draftNotes": "Draft thought piece — hold for publication gating"
+  }
+]

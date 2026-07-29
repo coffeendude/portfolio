@@ -1,0 +1,32 @@
+[
+  {
+    "id": "platform-observability",
+    "title": "Platform Observability",
+    "role": "Lead Engineer",
+    "outcome": "Reduced MTTR by 45% through SLI/SLO and incident playbooks",
+    "image": "backend",
+    "published": false,
+    "verified": false,
+    "draftNotes": "Contains an unverified metric — hide from public until verified"
+  },
+  {
+    "id": "data-platform",
+    "title": "Data Platform",
+    "role": "Architect",
+    "outcome": "Designed and launched an analytics pipeline for product insights",
+    "image": "data",
+    "published": false,
+    "verified": false,
+    "draftNotes": "Draft case study — hold for verification"
+  },
+  {
+    "id": "technical-gtm",
+    "title": "Technical GTM",
+    "role": "Advisor",
+    "outcome": "Built integrations and partner playbooks to accelerate adoption",
+    "image": "creator",
+    "published": false,
+    "verified": false,
+    "draftNotes": "Draft case study — hold for verification"
+  }
+]
